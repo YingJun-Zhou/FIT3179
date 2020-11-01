@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 500,
+  "title": "Tsunami",
+  "projection": {"type": "equalEarth"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/YingJun-Zhou/FIT3179/main/world.json",
+        "format": {"type": "topojson", "feature": "world"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/YingJun-Zhou/FIT3179/main/tsunami_dataset.csv"
+      },
+      "mark": {"type": "circle", "tooltip": {"content": "data"}},
+      "encoding": {
+        "longitude": {"field": "LONGITUDE", "type": "quantitative"},
+        "latitude": {"field": "LATITUDE", "type": "quantitative"},
+        "size": {
+          "field": "EQ_DEPTH",
+          "type": "quantitative",
+          "scale": {"domain": [0, 600]}
+        },
+        "color": {
+          "field": "TS_INTENSITY",
+          "type": "quantitative",
+          "scale": {"scheme": "reds"}
+        }
+      }
+    }
+  ]
+}
