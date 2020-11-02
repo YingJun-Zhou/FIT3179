@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A simple pie chart with embedded data.",
+  "title": "The time of Tsunami in different countries from 2012",
+  "data": {
+    "values": [
+      {"category": "JAPAN", "value": 12},
+      {"category": "NEW ZEALAND", "value": 3},
+      {"category": "USA", "value": 8},
+      {"category": "CHILE", "value": 9},
+      {"category": "SOLOMON ISLANDS", "value": 3},
+      {"category": "OTHER", "value": 4}
+    ]
+  },
+  "mark": "arc",
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative"},
+    "color": {"field": "category", "type": "nominal"}
+  },
+  "view": {"stroke": null}
+}
