@@ -123,19 +123,22 @@
 <script type="text/javascript">
   var specVis1 = "./map.json";
 
-  vegaEmbed('#vis1', specVis2, {"actions": false}).then(function(result) {
+  vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+          
   var specVis2= "./bar chart.json";
   
-   vegaEmbed('#vis2', specVis3, {"actions": false}).then(function(result) {
+   vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+          
   var specVis3= "./line chart.json";
 
-  vegaEmbed('#vis3', specVis4, {"actions": false}).then(function(result) {
+  vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
+          
   var specVis4= "./pie chart.json";
 
   vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
