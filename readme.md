@@ -1,1 +1,1 @@
-http://YingJun-Zhou.github.io/FIT3179/
+http://YingJun-Zhou.github.io/FIT3179/index.html
