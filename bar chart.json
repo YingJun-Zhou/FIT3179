@@ -6,8 +6,10 @@
   "description": "A simple bar chart with embedded data.",
   "data": {
     "values": [
-      {"intensity": "1", "time": 26}, {"intensity": "2", "time": 14}, {"intensity": "3", "time": 15},
-      {"intensity": "4", "time": 5}, {"intensity": "5", "time": 4}, {"intensity": "6", "time": 2}
+      {"intensity": "0.5", "time": 23}, {"intensity": "1", "time": 14}, {"intensity": "1.5", "time": 15},
+      {"intensity": "2", "time": 11}, {"intensity": "2.5", "time": 9}, {"intensity": "3", "time": 10},
+      {"intensity": "3.5", "time": 5}, {"intensity": "4", "time": 1}, {"intensity": "4.5", "time": 3},
+      {"intensity": "5", "time": 2}, {"intensity": "5.5", "time": 1}, {"intensity": "6", "time": 2}
     ]
   },
   "mark": "bar",
